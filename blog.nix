@@ -3,7 +3,7 @@
 stdenv.mkDerivation rec {
   pname = "romatthe-blog";
   version = "0.0.1";
-  src = ./.;
+  src = ./src;
   buildInputs = [ pkgs.zola ];
   buildPhase = ''
     zola build
